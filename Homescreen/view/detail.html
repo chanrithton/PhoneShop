@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <!-- log on website  -->
+  <link rel="shortcut icon" href="../images/log_shop.png" type="image/x-icon" />  
+  <title>Detail</title>
+    <link rel="stylesheet"
+          href="../css/styles.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica,kantumruy pro,Sans-serif;
+}
+body
+{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: rgb(67, 67, 67);
+}
+footer .containt
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .containt li
+{
+    list-style: none;
+}
+footer .containt .sec h3
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+footer .containt .sec h3::before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+footer .containt .sec p
+{
+    color: #fff;
+}
+.contact li 
+{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 10px;
+}
+.contact li span:nth-child()
+{
+    color: #fff;
+    font-size: 20px;
+}
+.contact li span
+{
+    color: #fff;
+}
+.contact a
+{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.contact a:hover
+{
+    color: #9aaeff;
+}
+.social
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+.social li a .fa
+{
+    color: #fff;
+    font-size: 30px;
+}
+.about li 
+{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 10px;
+}
+.about a
+{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.about a:hover
+{
+    color: #9aaeff;
+}
+.bank h5
+{
+    color: #f7f7f7;
+}
+.CopyrightText
+{
+    width: 100%;
+    background: rgb(67, 67, 67);
+    padding: 8px 100px;
+    text-align: center;
+    color: #aaaaaa;
+}
+.imgQr2{
+ margin-left: 20px;
+} 
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .product-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    /* Back-link icon */
+    .back-link {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #007bff;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .back-link i {
+      font-size: 18px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .product-card .image-section {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .product-card .image-section img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card .small-images {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .product-card .small-images img {
+      width: 60px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 4px;
+    }
+
+    .product-card .small-images img:hover {
+      border-color: #007bff;
+    }
+
+    .product-card .details-section {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .product-card .details-section h1 {
+      font-size: 24px;
+      color: rgb(222,137,58);
+    }
+
+    .product-card .details-section .price {
+      font-size: 22px;
+      color: #e63946;
+      margin: 10px 0;
+    }
+
+    .product-card .details-section a {
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 17px;
+      text-decoration: none;
+      color: rgb(222,137,58);
+    }
+     .product-card .details-section a:hover{
+      color: rgb(24, 61, 228);
+      font-size: 18px;
+      transition: 0.4s;
+
+     }
+
+    .product-card .details-section select,
+    .product-card .details-section input {
+      width: calc(50% - 10px);
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .product-card .details-section button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .product-card .details-section button:hover {
+      background-color: #0056b3;
+    }
+
+    .product-card .details-section .product-details {
+      margin-top: 20px;
+    }
+
+    .product-card .details-section .product-details h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .product-card .details-section .product-details p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <a href="../homescreen.html"
+           class="nav-brand">
+          <img class="nav-logo"
+               src="../images/log_shop.png"
+               style="width: 70px; height: auto;"
+               alt="logo">
+        </a>
+        <div class="contact-items">
+          <!-- phone number group link -->
+          <div class="contact-item">
+            <div class="box-icon">
+              <div class="icon">
+                <i class="fa-solid fa-phone animate__bounceIn"></i>
+              </div>
+  
+              <div class="leap">
+                <li><a href="#">&nbsp;&nbsp;(+855) 010-280-043</a></li>
+                <li><a href="#">&nbsp;&nbsp;(+855) 097-880-9505</a></li>
+                <li><a href="#">&nbsp;&nbsp;(+855) 010-456-666</a></li>
+              </div>
+            </div>
+          </div>
+          <!-- telegram grup link -->
+          <div class="contact-item">
+            <div class="box-icon">
+              <div class="icon">
+                <i class="fa-solid fa-comments animate__bounceIn"></i>
+              </div>
+              <div class="leap">
+                <li><a href="https://t.me/tonchanrith"
+                     target="_blank"
+                     style="display: inline-block; font-size: 14px; font-size: 17px; margin-left: 8px;">&nbsp;&nbsp;Join
+                    telegram Channel</a></li>
+                <li><a href="https://t.me/tonchanrith"
+                     target="_blank"
+                     style="display: inline-block;">&nbsp;&nbsp;Chat Telegram Now</a></li>
+                <li><a href="https://www.youtube.com/">&nbsp;&nbsp;Chat Messenger Now</a></li>
+              </div>
+            </div>
+          </div>
+          <!-- Email Address group link -->
+          <div class="contact-item">
+            <div class="box-icon">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot animate__bounceIn"></i>
+              </div>
+              <div class="leap">
+                <li><a href="#">&nbsp;&nbsp;Khan Daun Penh, Phnom Penh, Kingdom of Cambodia</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+  
+  
+    <!-- navbar start -->
+    <nav class="navbar bg--navbar">
+      <ul class="navbar-nav bg--navbar">
+        <li class="nav-item"><a href="../homescreen.html"
+             class="nav-brand">
+            <img class="nav-logo_menu"
+                 src="../images/log_shop.png"
+                 alt="logo">
+          </a></li>
+        <li class="nav-item"><a href="./homescreen.html"
+             class="nav-link">Home</a></li>
+  
+        <li class="menu-item dropdown">
+          <div class="dropdown-toggle"
+               style="color: white;">
+            Smartphone &nbsp;<i class="arrows down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-info"
+                 style="background-color: #5f9ea0;">
+              <div class="info-icon">
+                <img src="../images/smartphone-icon.png"
+                     width="100px">
+                &nbsp;&nbsp; Smartphone
+              </div>
+              <p class="line"></p>
+              <p style="font-size: 14px; font-family: helvetica,kantumruy pro,Sans-serif;">
+                Special deals on the latest cell phones and smartphones. Get FREE
+                Delivery on phones and devices with new activations. Now Mobile Phone & Computer Shop Phnom Penh,
+                Cambodia.
+              </p>
+            </div>
+            <div class="dropdown-links">
+              <ul>
+                <br>
+                <li><a href="../view/apple.html"><span class="icon-text rith">iPhone</span></a></li>
+                <li><a href="../view/samsung.html"><span class="icon-text rith">Samsung</span></a></li>
+                <li><a href="../view/oppo.html"><span class="icon-text rith">Oppo</span></a></li>
+                <li><a href="../view/Realme.html"><span class="icon-text rith">Realme</span></a></li>
+                <li><a href="../view/vivo.html"><span class="icon-text rith">Vivo</span></a></li>
+                <li><a href="../view/xiaomi.html"><span class="icon-text rith">Xiaomi</span></a></li>
+              </ul>
+              <ul style="padding-left: 50px;">
+                <br>
+                <li><a href="../view/oneplus.html"><span class="icon-text rith">Oneplus</span></a></li>
+                <li><a href="../view/Tecno Mobile.html"><span class="icon-text rith">Tecno</span></a></li>
+                <li><a href="../view/Huawei.html"><span class="icon-text rith">Huawei</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+  
+        <li class="menu-item dropdown">
+          <div class="dropdown-toggle"
+               style="color: white;">
+            Tablet &nbsp;<i class="arrows down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-info"
+                 style="background-color: purple;">
+              <div class="info-icon">
+                <img src="../images/tablet-icon.png"
+                     width="100px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tablet
+              </div>
+              <p class="line"></p>
+              <p style="font-size: 15px; font-family: helvetica,kantumruy pro,Sans-serif;">
+                Mobile Phone & Computer Shop for tablet devices.
+                Explore our large variety of tablets for taking notes,
+                reading or streaming content to find the best tablet for you.
+              </p>
+            </div>
+            <div class="dropdown-links">
+              <ul>
+                <br>
+                <li><a href="../view/iPad.html"><span class="icon-text rith">iPad</span></a></li>
+                <li><a href="../view/galaxy_tab.html"><span class="icon-text rith">Galaxy Tab</span></a></li>
+                <li><a href="../view/google_tab.html"><span class="icon-text rith">Google Tab</span></a></li>
+                <li><a href="../view/huawei_tab.html"><span class="icon-text rith">Huawei Tab</span></a></li>
+                <li><a href="../view/xiaomi_tab.html"><span class="icon-text rith">Xiaomi Tab</span></a></li>
+                <li><a href="../view/oppo_tab.html"><span class="icon-text rith">Oppo Tab</span></a></li>
+              </ul>
+              <ul style="padding-left: 50px;">
+                <br>
+                <li><a href="../view/nokia_tab.html"><span class="icon-text rith">Nokia Tab</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown">
+          <div class="dropdown-toggle"
+               style="color: white;">
+            Laptop &nbsp;<i class="arrows down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-info"
+                 style="background-color: rgb(86, 111, 86);">
+              <div class="info-icon">
+                <img src="../images/laptop-icon.png"
+                     width="100px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Laptop
+              </div>
+              <p class="line"></p>
+              <p style="font-size: 15px; font-family: helvetica,kantumruy pro,Sans-serif;">
+                Find a great collection of Laptops Computers and more at Mobile Phone & Computer Shop, Phnom Penh,
+                Cambodia.
+                Enjoy Low Prices and Free Shipping when you buy now online.
+              </p>
+            </div>
+            <div class="dropdown-links">
+              <ul>
+                <br>
+                <li><a href="../view/macbook.html"><span class="icon-text rith">MacBook</span></a></li>
+                <li><a href="../view/microsoft_surface.html"><span class="icon-text rith">Microsoft
+                      Surface</span></a></li>
+                <li><a href="../view/asus_laptop.html"><span class="icon-text rith">Asus Laptop</span></a></li>
+                <li><a href="../view/huawei_laptop.html"><span class="icon-text rith">Huawei Laptop</span></a>
+                </li>
+                <li><a href="../view/lenovo_laptop.html"><span class="icon-text rith">Lenovo Laptop</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item dropdown">
+          <div class="dropdown-toggle"
+               style="color: white;">
+            Smartwatch &nbsp;<i class="arrows down"></i>
+          </div>
+          <div class="dropdown-menu"
+               style="left: 50%;  transform: translateX(-50%); position: absolute;  top: 160%;">
+            <div class="dropdown-info"
+                 style="background-color: rgb(75, 75, 144)">
+              <div class="info-icon">
+                <img src="../images/smartwatch-icon.png"
+                     width="100px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Smartwatch
+              </div>
+              <p class="line"></p>
+              <p style="font-size: 15px; font-family: helvetica,kantumruy pro,Sans-serif;">
+                Find a great collection of Laptops Computers and more at Mobile Phone & Computer Shop, Phnom Penh,
+                Cambodia.
+                Enjoy Low Prices and Free Shipping when you buy now online.
+              </p>
+            </div>
+            <div class="dropdown-links">
+              <ul>
+                <br>
+                <li><a href="../view/apple_watch.html"><span class="icon-text rith">Apple Watch</span></a></li>
+                <li><a href="../galaxy_watch.html"><span class="icon-text rith">Galaxy Watch</span></a></li>
+                <li><a href="../view/huawri_watch.html"><span class="icon-text rith">Huawei Watch</span></a>
+                </li>
+                <li><a href="../view/xiaomi_watch.html"><span class="icon-text rith">Xiaomi Watch</span></a>
+                </li>
+                <li><a href="../view/oppo_watch.html"><span class="icon-text rith">Oppo Watch</span></a></li>
+                <li><a href="../view/realme_watch.html"><span class="icon-text rith">Realme Watch</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!-- <li class="nav-item"><a href="#" class="nav-link">Used</a></li> -->
+        </li>
+        <li class="menu-item dropdown">
+          <div class="dropdown-toggle"
+               style="color: white;">
+            Accessory &nbsp;<i class="arrows down"></i>
+          </div>
+          <div class="dropdown-menu"
+               style="left: 50%;  transform: translateX(-50%); position: absolute;  top: 160%;">
+            <div class="dropdown-info"
+                 style="background-color: brown">
+              <div class="info-icon">
+                <img src="../images/accessory-icon.png"
+                     width="100px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accessory
+              </div>
+              <p class="line"></p>
+              <p style="font-size: 14px; font-family: helvetica,kantumruy pro,Sans-serif;">
+                Shop through a wide selection of Mobile Phone Accessories, Tablet Accessories, Smartwatch Accessories,
+                Laptop Accessories and other electronic devices at Mobile Phone & Computer Shop, Phnom Penh, Cambodia
+              </p>
+            </div>
+            <div class="dropdown-links">
+              <ul>
+                <br>
+                <li><a href="../view/phone_case.html"><span class="icon-text rith">Phone Case</span></a></li>
+                <li><a href="../view/power_bank.html"><span class="icon-text rith">Power Bank</span></a></li>
+                <li><a href="../view/hadphones.html"><span class="icon-text rith">Hadphones</span></a></li>
+                <li><a href="../view/speaker.html"><span class="icon-text rith">Speaker</span></a></li>
+                <li><a href="../view/ipad_tablet_calse.html"><span class="icon-text rith">iPad/Tablet
+                      Case</span></a></li>
+                <li><a href="../view/adpater_charger_cable.html"><span class="icon-text rith">Adapter / Charger
+                      / Cable</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="../Homescreen/form/login.html"
+             class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+        <li class="nav-item"><a href="#"
+             class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li class="nav-item">
+          <!-- Search Icon -->
+          <a href="javascript:void(0);"
+             class="nav-link"
+             onclick="openSearchBar()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+  
+        <!-- Search Bar (Initially Hidden) -->
+  
+        <div id="searchBar"
+             class="search-bar"
+             style="display: none;">
+          <h2 class="title">Find your device</h2>
+          <div class="search-input-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text"
+                   class="form-control"
+                   placeholder="Search for products..." />
+            <i class="fa-solid fa-times close-icon"
+               onclick="closeSearchBar()"></i>
+          </div>
+        </div>
+  
+        <!-- Example Content -->
+  
+  </div>
+
+  <div class="product-card">
+    <!-- Back-Link Icon -->
+    <a href="javascript:history.back()"
+       class="back-link">
+      <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <!-- Product Image Section -->
+    <div class="image-section">
+      <img id="mainImage"
+           src="image/iPhone 12 Pro max.png"
+           alt="iPhone 12 Pro Max">
+      <div class="small-images">
+        <img src="image/iPhone_13.png"
+             alt="iPhone 13"
+             onclick="changeMainImage(this)">
+        <img src="image/Iphone 14.png"
+             alt="iPhone 14"
+             onclick="changeMainImage(this)">
+        <img src="image/iphone 15.png"
+             alt="iPhone 15"
+             onclick="changeMainImage(this)">
+        <img src="image/iphone16 pro.png"
+             alt="iPhone 16 Pro"
+             onclick="changeMainImage(this)">
+      </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="details-section">
+      <h1>iPhone 12 Pro Max</h1>
+      <p class="price">$649</p>
+<div style="display: flex; flex-direction: column; gap: 10px; height: 150px; ">
+  <div style="height: 30px; "><a href="tel:093535666"><i class="fab fa-telegram"></i> Chat with us now (093 535 666)</a></div>
+
+   <div style="height: 30px; "><a href="https://www.facebook.com"><i class="fab fa-facebook-messenger"></i> Chat via Messenger</a></div>
+  <div style="height: 30px; "> <a href="tel:010535666"><i class="fas fa-phone"></i> Call now (010 535 666)</a></div>
+</div>
+
+      <select>
+        <option>Select RAM</option>
+        <option>64GB</option>
+        <option>128GB</option>
+        <option>256GB</option>
+      </select>
+      <input type="number"
+             id="quantity"
+             value="1"
+             min="1"
+             oninput="validateQuantity()">
+      <button onclick="addToCart()">Add to Cart</button>
+
+      <div class="product-details">
+        <h4>Product Details</h4>
+        <p>Technology: GSM / CDMA / HSPA / EVDO / LTE / 5G</p>
+        <p>Weight: 203g (7.16oz)</p>
+        <p>Dimensions: 160.8 x 78.1 x 7.8 mm</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- Footer-->
+      <footer>
+        <div class="containt">
+          <div class="sec about us">
+            <h3>About US</h3><br>
+            <p>
+              Moblie Phone & Computer Shop, available for Sale | Buy | Installment for all kinds of new
+              mobilephone, tablets, laptop, smart watches, accessories and computers.
+            </p>
+          </div>
+          <div class="sec contact">
+            <h3>Direct Contact</h3><br>
+            <ul>
+              <li><span><i class="fa fa-phone"
+                     aria-hidden="true"><a href="#">&nbsp;(+855)10&nbsp;280&nbsp;043</a></i></span></li>
+              <li><span><i class="fa fa-phone"
+                     aria-hidden="true"><a href="#">&nbsp;(+855)097&nbsp;880&nbsp;9505</a></i></span></li>
+              <li><span><i class="fa fa-phone"
+                     aria-hidden="true"><a href="#">&nbsp;(+855)010&nbsp;456&nbsp;666</a></i></span></li>
+              <li><span><i class="fa fa-telegram"
+                     aria-hidden="true"><a href="#">&nbsp;Telegram</a></i></span></li>
+              <li><span><i class="fa fa-whatsapp"
+                     aria-hidden="true"><a href="#">&nbsp;Messenger</a></i></span>
+              </li>
+            </ul>
+          </div>
+          <div class="sec find">
+            <h3>Find Us On Socail</h3><br>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook-official"
+                     aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"
+                     aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-telegram"
+                     aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"
+                     aria-hidden="true"></i></a></li> <br>
+            </ul>
+            <ul class="about">
+              <li><a href="#">About&nbsp;Us</a></li>
+              <li><a href="#">PRIVACY&nbsp;PULICY</a></li>
+              <li><a href="#">TERM&nbsp;AND&nbsp;CONDITION</a></li>
+            </ul>
+          </div>
+          <div class="sec location">
+            <h3>Our Shop Location</h3><br>
+            <ul>
+              <li>
+                <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    &nbsp;  Khan Tuol Kouk, Phnom Penh, Kingdom of Cambodia. <br>
+                    🗺 Open Google Map
+                </p>
+            </li>
+            </ul>
+              <br>
+             <div style="display: flex;">
+              <li>
+                <img src="https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-150x150.webp"
+                     loading="lazy"
+                     width="90"
+                     height="90"
+                     class="attachment-thumbnail size-thumbnail wp-image-14723"
+                     alt=""
+                     srcset="https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-150x150.webp 150w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-300x300.webp 300w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-100x100.webp 100w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-50x50.webp 50w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram-64x64.webp 64w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-telegram.webp 480w"
+                     sizes="(max-width: 90px) 100vw, 90px">
+              </li>
+              <li>
+                <img class="imgQr2"
+                     src="https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-150x150.webp"
+                     loading="lazy"
+                     width="90"
+                     height="90"
+                     class="attachment-thumbnail size-thumbnail wp-image-14722"
+                     alt=""
+                     srcset="https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-150x150.webp 150w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-300x300.webp 300w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-100x100.webp 100w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-50x50.webp 50w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-map-64x64.webp 64w, https://arystorephone.com/wp-content/uploads/2021/07/arystore-map.webp 480w"
+                     sizes="(max-width: 90px) 100vw, 90px">
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="bank">
+          <div>
+            <h5>Accepted payment:</h5><br>
+          </div>
+          <div>
+            <img src="../images/Payment/Cash.png"
+                 title="Cash"
+                 alt="Cash"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+            <img src="../images/Payment/KHQR.png"
+                 title="KHQR"
+                 alt="KHQR"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+            <img src="../images/Payment/ABA.png"
+                 title="ABA"
+                 alt="ABA"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+            <img src="../images/Payment/Acleda.png"
+                 title="Acleda"
+                 alt="Acleda"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+            <img src="../images/Payment/Chip mong.png"
+                 title="Chipmong"
+                 alt="Chipmong"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+            <img src="../images/Payment/Wing bank.png"
+                 title="Wing"
+                 alt="Wing"
+                 loading="lazy"
+                 style="border-radius: 5px;">
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    function changeMainImage(smallImg) {
+      const mainImage = document.getElementById("mainImage");
+      mainImage.src = smallImg.src;
+    }
+
+    function validateQuantity() {
+      const input = document.getElementById("quantity");
+      if (input.value < 1) {
+        input.value = 1;
+      }
+    }
+
+    function addToCart() {
+      const quantity = document.getElementById("quantity").value;
+      alert(`${quantity} item(s) added to cart!`);
+    }
+
+    function openSearchBar() {
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Display the search bar
+        const searchBar = document.getElementById('searchBar');
+        searchBar.style.display = 'flex';
+      }
+
+      function closeSearchBar() {
+        // Hide the search bar
+        const searchBar = document.getElementById('searchBar');
+        searchBar.style.display = 'none';
+      }
+
+      const dropdowns = document.querySelectorAll(".menu-item.dropdown");
+        dropdowns.forEach((dropdown) => {
+          const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+          let hideTimeout;
+
+          dropdown.addEventListener("mouseenter", () => {
+            clearTimeout(hideTimeout);
+            dropdownMenu.classList.add("show");
+          });
+
+          dropdown.addEventListener("mouseleave", () => {
+            hideTimeout = setTimeout(() => {
+              dropdownMenu.classList.remove("show");
+            }, 100);
+          });
+
+          dropdownMenu.addEventListener("mouseenter", () => {
+            clearTimeout(hideTimeout);
+          });
+
+          dropdownMenu.addEventListener("mouseleave", () => {
+            hideTimeout = setTimeout(() => {
+              dropdownMenu.classList.remove("show");
+            }, 500);
+          });
+        });
+
+  </script>
+
+</body>
+
+</html>

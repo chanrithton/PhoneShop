@@ -1,0 +1,142 @@
+.container_cart {
+    width: 1200px;
+    height: 470px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container_shopping {
+    width: 100%;
+    background-color: #fff;
+    margin: 0% auto;
+    padding: 10px;
+}
+
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box_cart{
+    margin: 40px;
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box_cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+th, td {
+    padding: -9px;
+    text-align: center;
+    border: none; /* Remove borders */
+
+}
+
+
+.product-img {
+    width: 90px;
+    height: 100px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: -58px;
+}
+
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    background: transparent; 
+    font-size: 16px; /* Adjust font size */
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.quantity-input:focus {
+    border-bottom: 2px solid #ddd; /* Optional focus effect */
+}
+
+
+.box_carts{
+    margin: 40px;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box_carts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.cart-totals .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.cart-totals .row span {
+    font-size: 20px;
+    color: orange;
+}
+
+.cart-totals .value {
+    font-weight: bold;
+    font-size: 18px;
+    color: orange;
+   
+}
+
+.cart-totals .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    margin-top: 10px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: darkorange;
+}
+
+
+
+  

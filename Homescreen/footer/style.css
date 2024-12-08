@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica,kantumruy pro,Sans-serif;
+}
+body
+{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 100vh;
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: rgb(67, 67, 67);
+}
+footer .containt
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .containt li
+{
+    list-style: none;
+}
+footer .containt .sec h3
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+footer .containt .sec h3::before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+footer .containt .sec p
+{
+    color: #fff;
+}
+.contact li 
+{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 10px;
+}
+.contact li span:nth-child()
+{
+    color: #fff;
+    font-size: 20px;
+}
+.contact li span
+{
+    color: #fff;
+}
+.contact a
+{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.contact a:hover
+{
+    color: #9aaeff;
+}
+.social
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+.social li a .fa
+{
+    color: #fff;
+    font-size: 30px;
+}
+.about li 
+{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 10px;
+}
+.about a
+{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.about a:hover
+{
+    color: #9aaeff;
+}
+.bank h5
+{
+    color: #f7f7f7;
+}
+.CopyrightText
+{
+    width: 100%;
+    background: rgb(67, 67, 67);
+    padding: 8px 100px;
+    text-align: center;
+    color: #aaaaaa;
+}
+.imgQr2{
+    margin-left: 20px;
+} 

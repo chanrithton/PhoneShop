@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+            </script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="card"
+         style="margin: auto; width: 54rem; height: 580px;">
+        <div class="header"
+             style="margin: 10px 10px;">
+            <h3 style="color: orange;">My Account</h3>
+            <div class="line"
+                 style="width: 840px; height: 5px; background-color: orange;"></div>
+        </div>
+        <div style="margin-left: 10px;"
+             class="login">
+            <h3>Sign Up</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label style="color: rgb(221, 9, 9);"
+                           for="exampleInputEmail1"
+                           class="form-label">User or Email
+                        address *</label>
+                    <input type="email"
+                           class="form-control"
+                           id="exampleInputEmail1"
+                           placeholder="email"
+                           aria-describedby="emailHelp">
+                    <div id="emailHelp"
+                         style="    margin-top: 0.25rem;"
+                         class="form-text">We'll never share your email
+                        with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label style="color: rgb(214, 10, 10);"
+                           for="password"
+                           class="form-label">Password *</label>
+                    <input type="password"
+                           class="form-control"
+                           placeholder="password"
+                           id="password">
+                    <!-- Eye icons for toggling password visibility -->
+                    <div class="eyes"
+                         style="position: relative; bottom: 30px; left: 788px;">
+                        <i class="fa-regular fa-eye eye show"
+                           id="showEye"></i>
+                        <i class="fa-regular fa-eye-slash eye hide"
+                           id="hideEye"
+                           style="display:none;"></i>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label style="color: rgb(214, 10, 10);"
+                           for="password"
+                           class="form-label">Phone *</label>
+                    <input type="tel"
+                           class="form-control"
+                           placeholder="phone"
+                           id="phone">
+                    <!-- Eye icons for toggling password visibility -->
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox"
+                           class="form-check-input"
+                           id="exampleCheck1">
+                    <label class="form-check-label"
+                           for="exampleCheck1">Remember Me</label>
+                </div>
+                <button style="width: 120px; "
+                        type="submit"
+                        class="btn btn-info">Sign Up</button>
+            </form>
+            <a href="../form/login.html">Already have an Account</a>
+        </div>
+    </div>
+
+    <script src="./signUp.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+.head {
+  padding: 20px; /* Reduce padding to bring the search box closer */
+  text-align: center;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+.header_line {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px; /* Add margin to space it relative to the heading */
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.search-box input {
+  margin-bottom: 5px;
+  padding-top: 13px;
+  padding-right: 250px;
+  padding-bottom: 13px;
+  padding-left: 48px;
+  line-height: 24px;
+  font-size: 17px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  height: auto;
+  font-family: Roboto, sans-serif;
+  background-color: #eee;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.search-icon {
+  position: absolute;
+  left: 390px;
+  font-size: 18px; /* Size for the magnifying glass icon */
+  color: black;
+}
+
+.search-box input::placeholder {
+  font-family: Roboto, sans-serif;
+}
+.headline {
+  color: orange;
+  text-align: center;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+  /*  font-size: 1.5rem;
+    font-weight: 600; */
+}
+
+h1 {
+  text-align: center;
+  color: #ff6a00;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Ensure even spacing between elements */
+  border-radius: 8px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 6px;
+  width: 129px;
+  height: 129px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 4px;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff6a00;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+button {
+  background-color: gray;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%; /* Make button full width inside the product card */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+button:hover {
+  background-color: #e65b00;
+}
+.product_box {
+  width: 1200px;
+  height: 790px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product_box_one {
+  width: 1200px;
+  height: 680px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.underline {
+  width: calc(100% - 20px); /* Adjust width as needed */
+  height: 3px;
+  background-color: #e67812;
+  margin-top: 5px; /* Adjust this value to reduce space */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.product_box_apple {
+  width: 1200px;
+  height: 390px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product_boxs {
+  width: 600px;
+  height: 420px;
+  background-color: white;
+  border-radius: 20px;    
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.view-all {
+  color: orange;
+  flex-direction: row-reverse;
+  margin: 15px;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.arrow {
+  border: solid orange;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.leap a {
+  font-size: 0.7rem;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  margin: 0% auto;
+}
+
+.nav-brand .nav-logo {
+  width: 100px;
+}
+
+.nav-logo_menu {
+  width: 50px;
+}
+.header {
+  padding: 10px 50px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leap a {
+  margin-left: 20px;
+  display: contents;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background-color: #3d4d9e;
+  color: #fff;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.icon:hover {
+  background-color: transparent;
+  color: #3d4d9e;
+}
+
+.navbar {
+  background-color: transparent;
+  background-color: #d76903c5;
+  backdrop-filter: blur(7px);
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 14%;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.content,
+.item {
+  width: 100%;
+  min-height: 500px;
+  background-color: #d76a03;
+  color: #000000dd;
+}
+
+.item {
+  background-color: white;
+  color: black;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  font-family: helvetica, kantumruy pro, Sans-serif;
+}
+
+.item-preview {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background-image: url("../images/accessory.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+#prodetail,
+.single-pro-details h5 {
+  font-size: 15px;
+  color: #3d4d9e;
+}
+#prodetails,
+.single-pro-image {
+  width: 60%;
+  margin: 50px;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-clo {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetail,
+.single-pro-details {
+  width: 50%;
+  padding-top: 80px;
+}
+#prodetail,
+.single-pro-details h4 {
+  font-size: 30px;
+  text-align: center;
+  color: #e65b00;
+  padding: 20px 0 10px 0;
+}
+#prodetail,
+.single-pro-details h2 {
+  color: #e65b00;
+  font-size: 36px;
+}
+#prodetail,
+.single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#prodetail,
+.single-pro-details input {
+  color: red;
+  width: 45px;
+  height: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetail,
+.single-pro-details input:focus {
+  outline: none;
+}
+#prodetail,
+.single-pro-details button {
+  width: 40%;
+  margin: 1px;
+  background-color: blue;
+  color: #ffffff;
+}
+#prodetail,
+.single-pro-details span {
+  line-height: 25px;
+}
+.detal1 {
+  color: #e65b00;
+  font-size: 20px;
+}
+.single-pro-detaions a {
+  display: block;
+  text-align: 80px;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.detal1 {
+  font-size: 20px;
+  padding: 20px;
+}
+.p-back {
+  font-size: 20px;
+  color: #e65b00;
+}
