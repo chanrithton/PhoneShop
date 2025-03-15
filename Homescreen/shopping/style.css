@@ -56,13 +56,13 @@ th, td {
     object-fit: cover;
     padding-left: 10px;
 }
+
 .delete-btn {
     color: red;
     cursor: pointer;
-    font-size: 18px;
-    margin-right: -58px;
+    font-size: 12px;
+    margin-right: -32px;
 }
-
 
 .quantity-input {
     width: 50px;
